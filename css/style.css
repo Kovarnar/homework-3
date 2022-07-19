@@ -3,3 +3,44 @@ main {
     padding: 10px;
     margin: 0 auto;
 }
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.menu-list {
+    display: flex;
+}
+.menu-list li{
+    list-style: none;
+    line-height: 1.4;
+    border: 2px solid #4F3824;
+    background-color: #D0E37F;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    width: 12.5%;
+}
+.menu-list a, .menu-list a:visited{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+.menu-list li a:hover {
+    color: #D1603D;
+}
+.about-list {
+    display: flex;
+    padding: 0;
+}
+.about-list li {
+    list-style: none;
+}
+.about-list li:not(:last-child) {
+    margin-right: 25px;
+}
